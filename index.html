@@ -46,7 +46,7 @@
       <section class="hero-section">
         <div class="container container-hero">
           <h1 class="header-hero">Эффективные решения для вашего бизнеса</h1>
-          <button class="general-button index-hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="general-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--характеристики-->
@@ -318,7 +318,46 @@
             </svg>
           </button>
           <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
-          <button type="">Соглашаюсь с рассылкой и принимаю Условия договора</button>
+          <form class="modal-form">
+            <div class="modal-input__container">
+              <label class="modal-label" for="name">Имя</label>
+              <span>
+                <svg class="modal-human__icon">
+                  <use href="./images/icons-homework4/symbol-defs.svg#human"></use>
+                </svg>
+              </span>
+              <input class="modal-iput" type="text" name="name" id="name" />
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label" for="tel">Телефон</label>
+              <span>
+                <svg class="modal-phone__icon">
+                  <use href="./images/icons-homework4/symbol-defs.svg#phone"></use>
+                </svg>
+              </span>
+              <input class="modal-iput" type="tel" name="telephone" id="tel" />
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label" for="email">Почта</label>
+              <span>
+                <svg class="modal-email__icon">
+                  <use href="./images/icons-homework4/symbol-defs.svg#envelope-modal"></use>
+                </svg>
+              </span>
+              <input class="modal-iput" type="email" name="email" id="email" />
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label" for="textarea">Комментарий</label>
+              <textarea class="modal-textarea" name="" id="textarea" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+
+            <div class="modal-checkbox__submit">
+              <input type="checkbox" name="" id="contract" />
+              <label class="modal__contract-checkbox" for="contract"> Соглашаюсь с рассылкой и принимаю </label>
+              <a class="modal__contract-checkbox modal__contract-checkbox-link" href="">Условия договора</a>
+            </div>
+            <button class="general-button modal-submit__button" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <script src="./js/modal.js"></script>
@@ -378,16 +417,18 @@
           <h2 class="footer-header">подпишитесь на рассылку</h2>
           <div class="footer_form-button">
             <form class="footer-email__form">
-              <label>E-mail</label>
-              <input type="email" name="email" />
-            </form>
+              <label>
+                E-mail
+                <input type="email" name="email" />
+              </label>
 
-            <button class="footer-signup__button general-button" type="button">
-              Подписаться
-              <svg class="footer-form__icon">
-                <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
-              </svg>
-            </button>
+              <button class="footer-signup__button general-button" type="submit">
+                Подписаться
+                <svg class="footer-form__icon">
+                  <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
