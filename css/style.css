@@ -752,3 +752,8 @@ address {
   fill: var(--buttons-links-colour);
   border-color: var(--buttons-links-colour);
 }
+
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
