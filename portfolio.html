@@ -13,7 +13,7 @@
     <header class="portfolio-header">
       <div class="container container-nav">
         <nav class="nav">
-          <a class="logo" href="/"><span>Web</span>Studio</a>
+          <a class="logo header-logo" href="/"><span>Web</span>Studio</a>
 
           <ul class="nav-links">
             <li class="nav-link"><a href="./index.html">Студия</a></li>
@@ -276,20 +276,21 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="footer-newsletter">
           <h2 class="footer-header">подпишитесь на рассылку</h2>
           <div class="footer_form-button">
-            <form class="footer-email__form" action="">
-              <label for="">E-mail</label>
-              <input type="email" name="email" />
-            </form>
+            <form class="footer-email__form">
+              <label>
+                <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
+              </label>
 
-            <button class="footer-signup__button general-button" type="button">
-              Подписаться
-              <svg class="footer-form__icon">
-                <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
-              </svg>
-            </button>
+              <button class="footer-signup__button general-button" type="submit">
+                Подписаться
+                <svg class="footer-form__icon">
+                  <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
