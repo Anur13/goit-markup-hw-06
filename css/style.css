@@ -371,6 +371,8 @@ address {
 }
 
 .hero-section {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
   background-position: center;
@@ -704,6 +706,7 @@ address {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--transition-time) var(--transition-timing-function);
 }
 .modal-input__container {
   position: relative;
@@ -716,7 +719,7 @@ address {
   margin-bottom: 4px;
 }
 .modal-icon {
-  bottom: 14px;
+  top: 50%;
   left: 13px;
 }
 .modal-human__icon {
@@ -741,6 +744,11 @@ address {
   height: 12px;
   transition: fill var(--transition-time) var(--transition-timing-function);
 }
+
+.modal-submit__button:hover,
+.modal-submit__button:focus {
+}
+
 .modal-submit__button {
   display: block;
   margin-left: auto;
@@ -750,10 +758,12 @@ address {
   margin-bottom: 30px;
 }
 
-.modal-input__container:hover svg,
 .modal-input__container:focus svg,
-.modal-input__container:focus,
-.modal-input__container:hover {
+.modal-input__container:hover svg,
+.modal-input__container:hover .modal-input,
+.modal-input__container:focus .modal-input,
+.modal-input__container:hover .modal-textarea,
+.modal-input__container:focus .modal-textarea {
   fill: var(--buttons-links-colour);
   border-color: var(--buttons-links-colour);
 }
@@ -763,4 +773,5 @@ address {
   border-radius: 4px;
   padding-left: 10px;
   height: 40px;
+  transition: border-color var(--transition-time) var(--transition-timing-function);
 }
