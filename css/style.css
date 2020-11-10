@@ -778,8 +778,6 @@ address {
 
   padding-left: 30px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
 }
 
 .modal-input__container:focus svg,
@@ -804,4 +802,8 @@ address {
 
 .modal-checkbox__input {
   appearance: none;
+}
+
+.general-button:hover {
+  cursor: pointer;
 }
