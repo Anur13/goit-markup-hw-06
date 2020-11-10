@@ -33,6 +33,9 @@ img {
   flex-basis: 100%;
 }
 
+ul {
+  list-style: none;
+}
 h2,
 h3 {
   color: var(--secondary-text-colour);
@@ -42,7 +45,7 @@ header {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-colour);
 }
-a:not(.modal__contract-checkbox-link) {
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -245,16 +248,22 @@ a:active {
   color: var(--buttons-links-colour);
 }
 
-.footer-contacts {
+footer .footer-contact {
   font-size: 14px;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: rgb(255, 255, 255, 60%);
-  color: var(--background-colour);
+}
+footer .footer-adress {
+  color: #ffffff;
 }
 
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--buttons-links-colour);
+}
 .footer {
   background-color: #2f303a;
   color: var(--background-colour);
@@ -408,9 +417,10 @@ address {
 .clients-section {
   padding-top: 94px;
 }
-.footer-newsletter {
-  margin-left: 93px;
+.newletter-header {
+  margin-bottom: 20px;
 }
+
 .footer-header {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -430,9 +440,12 @@ address {
 .section__social-network {
   display: flex;
   align-items: baseline;
+  flex-basis: calc(100% - 60px / 3);
 }
-.social-network {
-  margin-left: 70px;
+
+.social-network,
+.footer-newsletter {
+  margin-left: 30px;
 }
 
 .social-network__icon-svg {
@@ -647,11 +660,6 @@ address {
   margin-top: 20px;
 }
 .footer-email__form {
-  max-height: 50px;
-  max-width: 358px;
-}
-
-.footer-email__form {
   display: flex;
 }
 
@@ -667,6 +675,7 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #2f303a;
+  padding-left: 15px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -674,8 +683,23 @@ address {
   border-radius: 4px;
 }
 .footer-input::placeholder {
-  padding-left: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
+.footer-input:hover,
+.footer-input:focus {
+  color: #ffffff;
+}
+
 .footer-form__icon {
   width: 24px;
   height: 24px;
@@ -699,10 +723,9 @@ address {
   margin-bottom: 12px;
 }
 
-.modal,
-.modal-textarea::placeholder {
+.modal {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.16;
@@ -719,6 +742,16 @@ address {
 }
 .modal__contract-checkbox-link {
   text-decoration: underline;
+  color: blue;
+}
+
+.modal-textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
 }
 
 .modal-textarea {
@@ -738,6 +771,13 @@ address {
 }
 .modal-label {
   margin-bottom: 4px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 40;
+  font-size: 12px;
+  line-height: 1.14;
+
+  letter-spacing: 0.01em;
 }
 
 .modal-icon {
@@ -757,9 +797,10 @@ address {
 
 .custom-checkbox {
   position: absolute;
-  left: 10px;
-  bottom: 5px;
   display: block;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -771,6 +812,7 @@ address {
   background-image: url(../images/images-homework-6/vector.svg);
   background-color: var(--buttons-links-colour);
   background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .modal-checkbox__submit {

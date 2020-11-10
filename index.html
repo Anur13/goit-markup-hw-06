@@ -321,40 +321,34 @@
           <form class="modal-form">
             <div class="modal-input__container">
               <label class="modal-label">Имя</label>
-              <span>
-                <svg class="modal-icon">
-                  <use href="./images/icons-homework4/symbol-defs.svg#human"></use>
-                </svg>
-              </span>
+              <svg class="modal-icon">
+                <use href="./images/icons-homework4/symbol-defs.svg#human"></use>
+              </svg>
               <input class="modal-input" type="text" name="name" />
             </div>
             <div class="modal-input__container">
               <label class="modal-label">Телефон</label>
-              <span>
-                <svg class="modal-icon">
-                  <use href="./images/icons-homework4/symbol-defs.svg#phone"></use>
-                </svg>
-              </span>
+              <svg class="modal-icon">
+                <use href="./images/icons-homework4/symbol-defs.svg#phone"></use>
+              </svg>
               <input class="modal-input" type="tel" name="telephone" />
             </div>
             <div class="modal-input__container">
               <label class="modal-label">Почта</label>
-              <span>
-                <svg class="modal-icon">
-                  <use href="./images/icons-homework4/symbol-defs.svg#envelope-modal"></use>
-                </svg>
-              </span>
+              <svg class="modal-icon">
+                <use href="./images/icons-homework4/symbol-defs.svg#envelope-modal"></use>
+              </svg>
               <input class="modal-input" type="email" name="email" />
             </div>
             <div class="modal-input__container">
               <label class="modal-label" for="textarea">Комментарий</label>
-              <textarea class="modal-textarea" name="" id="textarea" rows="10" placeholder="Введите текст"></textarea>
+              <textarea class="modal-textarea" id="textarea" rows="10" placeholder="Введите текст"></textarea>
             </div>
 
             <div class="modal-checkbox__submit">
               <label class="modal__contract-checkbox" for="contract">
                 Соглашаюсь с рассылкой и принимаю
-                <input class="modal-checkbox__input" type="checkbox" name="" id="contract" />
+                <input class="modal-checkbox__input" type="checkbox" id="contract" />
                 <span class="custom-checkbox"></span>
               </label>
               <a class="modal__contract-checkbox modal__contract-checkbox-link" href="">Условия договора</a>
@@ -374,9 +368,9 @@
           </div>
           <div class="section__social-network">
             <address class="footer-contacts">
-              <p class="footer-contact">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="" class="footer-contact footer-adress">г. Киев, пр-т Леси Украинки, 26</a>
               <a class="footer-contact" href="info@example.com">info@example.com</a>
-              <a href="tel:+380991111111">099 111 11 11</a>
+              <a class="footer-contact" href="tel:+380991111111">099 111 11 11</a>
             </address>
           </div>
         </div>
@@ -417,21 +411,19 @@
           </div>
         </div>
         <div class="footer-newsletter">
-          <h2 class="footer-header">подпишитесь на рассылку</h2>
-          <div class="footer_form-button">
-            <form class="footer-email__form">
-              <label>
-                <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
-              </label>
+          <h2 class="footer-header newletter-header">подпишитесь на рассылку</h2>
+          <form class="footer-email__form">
+            <label>
+              <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
+            </label>
 
-              <button class="footer-signup__button general-button" type="submit">
-                Подписаться
-                <svg class="footer-form__icon">
-                  <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+            <button class="footer-signup__button general-button" type="submit">
+              Подписаться
+              <svg class="footer-form__icon">
+                <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
