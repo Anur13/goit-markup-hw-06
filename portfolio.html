@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="portfolio-header">
@@ -42,11 +42,11 @@
       <h2 class="hidden">Виды продуктов</h2>
       <div class="container buttons-container">
         <ul class="buttons-list">
-          <li><button class="button" type="button">Все</button></li>
-          <li><button class="button" type="button">Веб-сайты</button></li>
-          <li><button class="button" type="button">Приложения</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+          <li><button class="portfolio-button" type="button">Все</button></li>
+          <li><button class="portfolio-button" type="button">Веб-сайты</button></li>
+          <li><button class="portfolio-button" type="button">Приложения</button></li>
+          <li><button class="portfolio-button" type="button">Дизайн</button></li>
+          <li><button class="portfolio-button" type="button">Маркетинг</button></li>
         </ul>
       </div>
 
@@ -243,7 +243,7 @@
 
         <div class="section__social-network">
           <div class="social-network">
-            <h2><strong class="footer-header">присоединяйтесь</strong></h2>
+            <h2 class="footer-header"><strong>присоединяйтесь</strong></h2>
             <ul class="icon-list social-network__links">
               <li class="icon-item">
                 <a class="footer-link social-network__icon-link" target="_blank" aria-label="фейсбук" href="" rel="noopener noreferrer">
@@ -278,20 +278,18 @@
         </div>
         <div class="footer-newsletter">
           <h2 class="footer-header">подпишитесь на рассылку</h2>
-          <div class="footer_form-button">
-            <form class="footer-email__form">
-              <label>
-                <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
-              </label>
+          <form class="footer-email__form">
+            <label>
+              <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
+            </label>
 
-              <button class="footer-signup__button general-button" type="submit">
-                Подписаться
-                <svg class="footer-form__icon">
-                  <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+            <button class="footer-signup__button general-button" type="submit">
+              Подписаться
+              <svg class="footer-form__icon">
+                <use href="./images/icons-homework4/symbol-defs.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
